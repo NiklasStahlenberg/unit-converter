@@ -21,8 +21,8 @@ convertBtn.addEventListener("click", () => {
 
 
 function displayLengthCalcualtion(input) {
-    const meterValue = (input * 3.281).toFixed(3)
-    const feetValue = (input / 3.281).toFixed(3)
+    const meterValue = (input / 3.281).toFixed(3)
+    const feetValue = (input * 3.281).toFixed(3)
     
     lengthEl.innerText = `${input} meter = ${feetValue} feet | ${input} feet = ${meterValue} meters`
 }
